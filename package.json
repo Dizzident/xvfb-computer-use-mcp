@@ -1,0 +1,23 @@
+{
+  "name": "@npp/computer-use-mcp",
+  "version": "1.0.0",
+  "description": "Offscreen computer-use MCP server using Xvfb for headless E2E testing",
+  "type": "module",
+  "main": "dist/main.js",
+  "bin": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "npx tsx src/main.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "sharp": "^0.34.5",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0"
+  }
+}
